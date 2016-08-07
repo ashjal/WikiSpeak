@@ -21,25 +21,23 @@
 		<!-- Include Modernizr in the head, before any other Javascript -->
 		<script src="includes/js/modernizr-2.6.2.min.js"></script>
 		
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
 		<!-- First try for the online version of jQuery-->
 		<script src="http://code.jquery.com/jquery.js"></script>
 		
 		<!-- If no online access, fallback to our hardcoded version of jQuery -->
 		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
 		
-		<!-- Bootstrap JS -->
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		
 		<!-- Custom JS -->
 		<script src="includes/js/script.js"></script>
-		<script src="includes/js/jquery-latest.js" type="text/javascript"></script>
         <script src="includes/js/jquery.wikiblurb.js" type="text/javascript"></script>
         <script src="includes/js/wikiSpeak.js" type="text/javascript"></script>
         <script src="includes/js/ttsCall.js" type="text/javascript"></script>
         <script src="includes/js/speakWorker.js" type="text/javascript"></script>
         <script src="includes/js/speakGenerator.js" type="text/javascript"></script>
 
-		
 	</head>
 	<body>
 	
@@ -47,11 +45,10 @@
 		
 			<nav class="navbar navbar-inverse navbar-fixed-top">
 				<div class="container">			
-					<a class="navbar-brand" href="/"><h2>Wiki Speak</h2></a>	
-					<div class="nav navbar-nav pull-right" style="margin-top:15px;"><img src="images/wiki.jpg" alt="Your Logo"></div>			
+					<a class="navbar-brand" href="file:///C:/Users/Shobhit/Downloads/WikiSpeak/index.html"><h2>WikiSpeak</h2></a>	
+					<div class="nav navbar-nav pull-right" style="margin-top:15px;"><img src="images/wiki.jpg"></div>			
 				</div>
-			</nav>
-			
+			</nav>	
 			
 			<div class="carousel slide" id="myCarousel">				
 			</div>
@@ -62,7 +59,7 @@
 			<div class="row" id="bigCallout">
 				<div class="col-12">										
 					<div class="navbar-form pull-left">						
-						<input type="text" class="form-control input-lg" placeholder="Search this site..." id="searchInput">
+						<input type="text" class="form-control input-lg" placeholder="Search..." id="searchInput">
 						<button  class="btn btn-primary" onclick="getText(); return false;"><span class="glyphicon glyphicon-search"></span></button>
 						<button  class="btn btn-danger" onclick="reloadPage();"><span class="fa fa-refresh fa"></span></button>					
 					</div>
@@ -83,12 +80,13 @@
 					</p>
 				</div>
 			</div>
+						
+			<div id="audio">
+			</div>
+			
 		</div>		
-	
-		<div id="audio">
-		</div>
 		
-		<div class="navbar navbar-fixed-bottom navbar-inverse">
+		<div class="navbar navbar-inverse navbar-fixed-bottom">
 			<div class="row">
 				<div class="col-sm-4">
 					<h6 class="text-muted">Copyright &copy; 2016</h6>
@@ -96,18 +94,18 @@
 				
 				<div class="col-sm-6">
 					<h6 class="text-muted">About Us</h6>
-					<p class="text-muted">Wikipedia Hackathon</p>
+					<p class="text-muted"><a href="https://meta.wikimedia.org/wiki/WikiConference_India_2016" target="_blank">Wikipedia Hackathon</a></p>
 				</div>
 				
 				<div class="col-sm-2">
-					<h6 class="text-muted">Follow Us</h6>
+					<h6 class="text-muted">Developers</h6>
 					<ul class="unstyled">
-						<li><a href="#">Palash</a></li>
-						<li><a href="#">Shobhit</a></li>
-						<li><a href="#">Shivangi</a></li>
+						<li><a href="https://github.com/ashjal" target="_blank">Palash</a></li>
+						<li><a href="https://github.com/shobhit345" target="_blank">Shobhit</a></li>
+						<li><a href="https://github.com/shivangi2201" target="_blank">Shivangi</a></li>
+						<li><a href="https://github.com/sandarumk/" target="_blank">Dinu</a></li>
 					</ul>
-				</div>
-				
+				</div>		
 			</div>
 		</div>
 		
